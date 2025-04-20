@@ -12,9 +12,6 @@
 
 ### 📂 Google Dorks (useful examples)
 #### 🔐 Admin panels & login pages
-### 📂 Google Dorks – Useful Examples
-
-#### 🔐 Admin panels & login pages
 ```
 inurl:admin
 inurl:admin/login
