@@ -12,6 +12,9 @@
 
 ### 📂 Google Dorks (useful examples)
 #### 🔐 Admin panels & login pages
+### 📂 Google Dorks – Useful Examples
+
+#### 🔐 Admin panels & login pages
 ```
 inurl:admin
 inurl:admin/login
@@ -82,6 +85,93 @@ intitle:"Live View / - AXIS"
 inurl:"webcamXP"
 ```
 
+
+
+#### 🔓 Login portals & control panels
+```
+inurl:login.asp
+inurl:signin
+inurl:auth
+inurl:adminpanel
+inurl:backend
+inurl:secure
+intitle:"Admin Console"
+```
+
+#### 🔎 Backup files & config leaks
+```
+filetype:bak
+filetype:old
+filetype:backup
+filetype:cfg
+filetype:ini
+filetype:db site:example.com
+inurl:backup
+inurl:wp-content/uploads/backup
+```
+
+#### 💾 Database dumps
+```
+filetype:sql
+filetype:db
+filetype:mdb
+inurl:/dump.sql
+intitle:"index of" "database"
+```
+
+#### 🛜 Network device panels
+```
+intitle:"Router Configuration"
+intitle:"D-Link Configuration"
+intitle:"Netgear Router"
+inurl:":8080"
+inurl:":8443"
+```
+
+#### 🔧 Development & environment files
+```
+filetype:env
+filetype:yaml
+filetype:gitignore
+filetype:log
+intitle:"index of" .env
+intitle:"index of" config.yaml
+```
+
+#### 🧬 Security camera feeds
+```
+inurl:view/index.shtml
+inurl:control/userimage.html
+intitle:"IP Camera"
+inurl:liveview.cgi
+inurl:video.mjpg
+```
+
+#### 💰 E-commerce & payment panels
+```
+inurl:cart
+inurl:checkout
+inurl:payment
+intitle:"Order Confirmation"
+filetype:xls "transaction"
+```
+
+#### 🧪 Debug & test pages
+```
+intitle:"Test Page for Apache"
+intitle:"PHP Info"
+intitle:"Server at"
+inurl:test
+inurl:debug
+```
+
+#### 🔍 Search boxes (injection points)
+```
+inurl:search.php?q=
+inurl:query=
+inurl:key=
+inurl:s=search
+```
 
 ---
 
