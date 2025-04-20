@@ -11,12 +11,79 @@
 ## 🔎 Techniques & Tools
 
 ### 📂 Google Dorks (useful examples)
+#### 🔐 Admin panels & login pages
 ```
 inurl:admin
-filetype:pdf site:example.com
-intitle:"index of"
+inurl:admin/login
+inurl:cpanel
+inurl:dashboard
+intitle:"admin login"
 site:example.com inurl:login
 ```
+
+#### 📁 Exposed directories & file listings
+```
+intitle:"index of /"
+intitle:"index of" site:example.com
+intitle:"index of" backup
+intitle:"index of" .git
+intitle:"index of" db
+```
+
+#### 📄 Sensitive file types
+```
+filetype:env DB_PASSWORD
+filetype:log password
+filetype:sql "insert into"
+filetype:pdf site:example.com
+filetype:xls site:example.com
+filetype:conf "passwd"
+```
+
+#### 🧠 Information disclosure
+```
+intext:"Welcome to phpMyAdmin"
+intitle:"Apache2 Ubuntu Default Page"
+inurl:wp-content
+inurl:.env
+inurl:config
+intext:"Index of /" "parent directory"
+```
+
+#### 🔑 Password leaks & credentials
+```
+filetype:txt "password"
+filetype:xls "username password email"
+"DB_PASSWORD" filetype:env
+"ftp" "upload file" site:example.com
+"login" "password" site:pastebin.com
+```
+
+#### 💬 Emails and user info
+```
+intext:@example.com
+intext:"your password is"
+"email *.*.*.*.*" filetype:xls
+```
+
+#### 🎯 Targeted reconnaissance
+```
+site:example.com filetype:pdf
+site:example.com inurl:admin
+site:example.com intext:"confidential"
+site:example.com intitle:"index of"
+```
+
+#### ⚙️ Devices and camera interfaces
+```
+inurl:"/view/view.shtml"
+inurl:"/video.cgi"
+intitle:"Live View / - AXIS"
+inurl:"webcamXP"
+```
+
+
+---
 
 ### 🕷️ Crawlers & Collection Tools
 - `wget --mirror https://target.com`
